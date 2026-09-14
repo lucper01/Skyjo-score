@@ -1,53 +1,21 @@
 # Skyjo Score
 
-Application web légère en **un seul `index.html`** pour compter les points pendant une partie de Skyjo.
+Skyjo Score est un compteur de points simple et rapide pour suivre une partie de Skyjo directement depuis un navigateur, sur ordinateur ou mobile.
+
+L'application permet de sélectionner les joueurs, saisir les scores manche après manche et suivre automatiquement le classement en temps réel. Les scores négatifs sont pris en charge, l'historique des manches peut être corrigé et la partie en cours est sauvegardée localement afin de pouvoir être reprise après fermeture ou rechargement de la page.
 
 ## Fonctionnalités
 
-- sélection de joueurs enregistrés localement ;
-- ajout et suppression de joueurs ;
-- lancement d'une partie avec les joueurs sélectionnés ;
-- saisie des scores manche par manche ;
-- prise en charge des scores négatifs ;
-- classement automatique en temps réel ;
+- ajout et sélection des joueurs ;
+- saisie des scores à chaque manche ;
+- calcul automatique des totaux ;
+- classement en temps réel ;
+- gestion des scores négatifs ;
 - historique des manches ;
-- suppression d'une manche avec recalcul des totaux ;
-- sauvegarde automatique dans le navigateur via `localStorage` ;
-- reprise d'une partie en cours ;
-- écran final avec classement et revanche.
+- suppression d'une manche avec recalcul automatique ;
+- sauvegarde locale de la partie en cours ;
+- reprise d'une partie interrompue ;
+- écran de fin de partie avec classement final ;
+- revanche rapide avec les mêmes joueurs.
 
-## Structure du projet
-
-```text
-.
-├── index.html
-└── README.md
-```
-
-Aucune dépendance externe n'est nécessaire.
-
-## Utilisation locale
-
-Il suffit d'ouvrir `index.html` dans un navigateur moderne.
-
-## Déploiement GitHub Pages
-
-Le projet peut être publié très simplement avec GitHub Pages.
-
-1. Aller dans `Settings` du dépôt.
-2. Ouvrir `Pages`.
-3. Choisir `Deploy from a branch`.
-4. Sélectionner la branche `main` et le dossier `/ (root)`.
-5. Enregistrer.
-
-L'application sera alors servie directement depuis GitHub Pages.
-
-## Direction artistique
-
-L'interface adopte une **direction artistique originale inspirée d'un univers de cartes et de table de jeu**, afin d'évoquer l'ambiance de Skyjo tout en conservant une identité propre à l'application.
-
-Par défaut, le dépôt **n'intègre pas d'assets officiels** du jeu. Si vous disposez de visuels que vous êtes autorisé à utiliser, vous pouvez les ajouter ensuite dans un dossier `assets/` et les intégrer au fond de l'interface.
-
-## Stockage
-
-Les données sont stockées localement dans le navigateur de l'utilisateur. Aucune base de données ni aucun serveur ne sont requis pour cette version.
+L'application fonctionne entièrement dans le navigateur et ne nécessite aucun compte ni serveur.
